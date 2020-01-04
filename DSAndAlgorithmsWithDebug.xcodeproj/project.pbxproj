@@ -18,6 +18,8 @@
 		18F0F07223B90A0700789FF1 /* StackChallenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F0F07123B90A0700789FF1 /* StackChallenges.swift */; };
 		18F0F07523B9B96D00789FF1 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F0F07423B9B96D00789FF1 /* Queue.swift */; };
 		18F0F07723B9B97500789FF1 /* QueueChallenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F0F07623B9B97500789FF1 /* QueueChallenges.swift */; };
+		EB50B9A223C0EAAA00D95A02 /* TreeChallenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB50B9A023C0EAAA00D95A02 /* TreeChallenges.swift */; };
+		EB50B9A323C0EAAA00D95A02 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB50B9A123C0EAAA00D95A02 /* TreeNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +47,8 @@
 		18F0F07123B90A0700789FF1 /* StackChallenges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackChallenges.swift; sourceTree = "<group>"; };
 		18F0F07423B9B96D00789FF1 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		18F0F07623B9B97500789FF1 /* QueueChallenges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueChallenges.swift; sourceTree = "<group>"; };
+		EB50B9A023C0EAAA00D95A02 /* TreeChallenges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeChallenges.swift; sourceTree = "<group>"; };
+		EB50B9A123C0EAAA00D95A02 /* TreeNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 		18F0F06123B7C6DB00789FF1 /* DSAndAlgorithmsWithDebug */ = {
 			isa = PBXGroup;
 			children = (
+				EB50B99F23C0EAAA00D95A02 /* Tree */,
 				18F0F07323B9B95F00789FF1 /* Queue */,
 				18F0F06E23B909EF00789FF1 /* Stack */,
 				18F0F06923B7C75800789FF1 /* LinkedList */,
@@ -114,6 +119,15 @@
 				182184A223BD0144008FD4A2 /* MonopolyManager.swift */,
 			);
 			path = Queue;
+			sourceTree = "<group>";
+		};
+		EB50B99F23C0EAAA00D95A02 /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				EB50B9A023C0EAAA00D95A02 /* TreeChallenges.swift */,
+				EB50B9A123C0EAAA00D95A02 /* TreeNode.swift */,
+			);
+			path = Tree;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,12 +191,14 @@
 				186AB6CD23BBB4C2006D5C9E /* TKGRingBuffer.swift in Sources */,
 				18F0F07023B909FF00789FF1 /* Stack.swift in Sources */,
 				18F0F07523B9B96D00789FF1 /* Queue.swift in Sources */,
+				EB50B9A323C0EAAA00D95A02 /* TreeNode.swift in Sources */,
 				182F0DB923BBA600002A86A2 /* RingBuffer.swift in Sources */,
 				18F0F06B23B7C76E00789FF1 /* LinkedList.swift in Sources */,
 				18F0F06323B7C6DB00789FF1 /* main.swift in Sources */,
 				183EEE2323BA53CA0031A90E /* BidirectionalLinkedList.swift in Sources */,
 				18F0F07723B9B97500789FF1 /* QueueChallenges.swift in Sources */,
 				182184A323BD0144008FD4A2 /* MonopolyManager.swift in Sources */,
+				EB50B9A223C0EAAA00D95A02 /* TreeChallenges.swift in Sources */,
 				18F0F07223B90A0700789FF1 /* StackChallenges.swift in Sources */,
 				18F0F06D23B7C7E100789FF1 /* LinkedListChallenges.swift in Sources */,
 			);
