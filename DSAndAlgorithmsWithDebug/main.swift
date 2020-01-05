@@ -8,5 +8,5 @@
 
 import Foundation
 
-QueueChallenges.challenge2()
+TreeChallenges.challenge1()
 
