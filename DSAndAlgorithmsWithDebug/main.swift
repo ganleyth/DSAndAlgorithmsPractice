@@ -8,5 +8,5 @@
 
 import Foundation
 
-BinaryTreeChallenges.challenge1()
+BinaryTreeChallenges.challenge2()
 
