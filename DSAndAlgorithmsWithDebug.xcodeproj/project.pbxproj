@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180BF3C723CAF6DF0012A823 /* BSTChallenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180BF3C623CAF6DF0012A823 /* BSTChallenges.swift */; };
 		182184A323BD0144008FD4A2 /* MonopolyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182184A223BD0144008FD4A2 /* MonopolyManager.swift */; };
 		182F0DB923BBA600002A86A2 /* RingBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182F0DB823BBA600002A86A2 /* RingBuffer.swift */; };
 		183EEE2323BA53CA0031A90E /* BidirectionalLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183EEE2223BA53CA0031A90E /* BidirectionalLinkedList.swift */; };
+		1867942F23CA30B300FB0ADB /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867942E23CA30B300FB0ADB /* BinarySearchTree.swift */; };
 		186AB6CD23BBB4C2006D5C9E /* TKGRingBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186AB6CC23BBB4C2006D5C9E /* TKGRingBuffer.swift */; };
 		187D75EF23C241FB008ABC8E /* BinaryNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D75EE23C241FB008ABC8E /* BinaryNode.swift */; };
 		187D75F123C242ED008ABC8E /* BinaryTreeChallenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D75F023C242ED008ABC8E /* BinaryTreeChallenges.swift */; };
@@ -37,9 +39,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		180BF3C623CAF6DF0012A823 /* BSTChallenges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSTChallenges.swift; sourceTree = "<group>"; };
 		182184A223BD0144008FD4A2 /* MonopolyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonopolyManager.swift; sourceTree = "<group>"; };
 		182F0DB823BBA600002A86A2 /* RingBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RingBuffer.swift; sourceTree = "<group>"; };
 		183EEE2223BA53CA0031A90E /* BidirectionalLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BidirectionalLinkedList.swift; sourceTree = "<group>"; };
+		1867942E23CA30B300FB0ADB /* BinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
 		186AB6CC23BBB4C2006D5C9E /* TKGRingBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TKGRingBuffer.swift; sourceTree = "<group>"; };
 		187D75EE23C241FB008ABC8E /* BinaryNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryNode.swift; sourceTree = "<group>"; };
 		187D75F023C242ED008ABC8E /* BinaryTreeChallenges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTreeChallenges.swift; sourceTree = "<group>"; };
@@ -66,6 +70,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1867942D23CA307B00FB0ADB /* BST */ = {
+			isa = PBXGroup;
+			children = (
+				1867942E23CA30B300FB0ADB /* BinarySearchTree.swift */,
+				180BF3C623CAF6DF0012A823 /* BSTChallenges.swift */,
+			);
+			path = BST;
+			sourceTree = "<group>";
+		};
 		187D75ED23C241EB008ABC8E /* BinaryTree */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +107,7 @@
 		18F0F06123B7C6DB00789FF1 /* DSAndAlgorithmsWithDebug */ = {
 			isa = PBXGroup;
 			children = (
+				1867942D23CA307B00FB0ADB /* BST */,
 				187D75ED23C241EB008ABC8E /* BinaryTree */,
 				EB50B99F23C0EAAA00D95A02 /* Tree */,
 				18F0F07323B9B95F00789FF1 /* Queue */,
@@ -214,9 +228,11 @@
 				183EEE2323BA53CA0031A90E /* BidirectionalLinkedList.swift in Sources */,
 				18F0F07723B9B97500789FF1 /* QueueChallenges.swift in Sources */,
 				182184A323BD0144008FD4A2 /* MonopolyManager.swift in Sources */,
+				1867942F23CA30B300FB0ADB /* BinarySearchTree.swift in Sources */,
 				EB50B9A223C0EAAA00D95A02 /* TreeChallenges.swift in Sources */,
 				18F0F07223B90A0700789FF1 /* StackChallenges.swift in Sources */,
 				18F0F06D23B7C7E100789FF1 /* LinkedListChallenges.swift in Sources */,
+				180BF3C723CAF6DF0012A823 /* BSTChallenges.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +356,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7W33J4T989;
+				DEVELOPMENT_TEAM = QFVJ6KY7E2;
 				ENABLE_HARDENED_RUNTIME = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -1,5 +1,5 @@
 class BinaryNode<Element> {
-    let value: Element
+    var value: Element
     var left: BinaryNode?
     var right: BinaryNode?
     

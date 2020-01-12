@@ -8,5 +8,5 @@
 
 import Foundation
 
-BinaryTreeChallenges.challenge2()
+BSTChallenges.playground()
 
