@@ -51,6 +51,10 @@ class BSTChallenges {
     static func challenge2() {
         print((tree1 == tree2) ? "Equal" : "Not Equal")
     }
+
+    static func challenge3() {
+        print((tree1.hasSameElements(as: tree2)) ? "Same" : "Not the same")
+    }
 }
 
 // Their solution to challenge 1
@@ -93,5 +97,23 @@ extension BinarySearchTree: Equatable {
             // One is nil and the other is non-nil
             return false
         }
+    }
+}
+
+// Their solution for challenge 3
+extension BinarySearchTree where Element: Hashable {
+
+    func contains(_ otherTree: BinarySearchTree<Element>) -> Bool {
+        var set = Set<Element>()
+        root?.traverseInOrder(visit: { set.insert($0) })
+
+        var containsOtherTree = true
+        otherTree.root?.traverseInOrder(visit: {
+            if !set.contains($0) {
+                containsOtherTree = false
+            }
+        })
+
+        return containsOtherTree
     }
 }
