@@ -1,6 +1,6 @@
 struct AVLTree<Element: Comparable> {
 
-    private(set) var root: BinaryNode<Element>?
+    private(set) var root: AVLNode<Element>?
 
     init() {}
 
@@ -8,18 +8,19 @@ struct AVLTree<Element: Comparable> {
         root = insert(at: root, value: value)
     }
 
-    private func insert(at node: BinaryNode<Element>?, value: Element) -> BinaryNode<Element> {
-        guard let node = node else {
-            return BinaryNode(value: value)
-        }
-
+    private func insert(at node: AVLNode<Element>?, value: Element) -> AVLNode<Element> {
+        guard let node = node else { return AVLNode(value: value) }
+        
         if value < node.value {
             node.left = insert(at: node.left, value: value)
         } else {
             node.right = insert(at: node.right, value: value)
         }
-
-        return node
+        
+        let balancedNode = balanced(node)
+        balancedNode.height = max(balancedNode.leftHeight, balancedNode.rightHeight) + 1
+        
+        return balancedNode
     }
 
     private func leftRotate(_ node: AVLNode<Element>) -> AVLNode<Element> {
@@ -42,6 +43,37 @@ struct AVLTree<Element: Comparable> {
         pivot.height = max(pivot.leftHeight, pivot.rightHeight) + 1
 
         return pivot
+    }
+    
+    private func rightLeftRotate(_ node: AVLNode<Element>) -> AVLNode<Element> {
+        guard let right = node.right else { return node }
+        node.right = rightRotate(right)
+        return leftRotate(node)
+    }
+    
+    private func leftRightRotate(_ node: AVLNode<Element>) -> AVLNode<Element> {
+        guard let left = node.left else { return node }
+        node.left = leftRotate(left)
+        return rightRotate(node)
+    }
+    
+    private func balanced(_ node: AVLNode<Element>) -> AVLNode<Element> {
+        switch node.balanceFactor {
+        case 2:
+            if let left = node.left, left.balanceFactor == -1 {
+                return leftRightRotate(node)
+            } else {
+                return rightRotate(node)
+            }
+        case -2:
+            if let right = node.right, right.balanceFactor == 1 {
+                return rightLeftRotate(node)
+            } else {
+                return leftRotate(node)
+            }
+        default:
+            return node
+        }
     }
 
     func contains(_ value: Element) -> Bool {
@@ -66,7 +98,7 @@ struct AVLTree<Element: Comparable> {
         root = remove(from: root, value: value)
     }
 
-    private func remove(from node: BinaryNode<Element>?, value: Element) -> BinaryNode<Element>? {
+    private func remove(from node: AVLNode<Element>?, value: Element) -> AVLNode<Element>? {
         guard let node = node else { return nil }
 
         if node.value == value {
@@ -88,7 +120,9 @@ struct AVLTree<Element: Comparable> {
             node.right = remove(from: node.right, value: value)
         }
 
-        return node
+        let balancedNode = balanced(node)
+        balancedNode.height = max(balancedNode.leftHeight, balancedNode.rightHeight) + 1
+        return balancedNode
     }
 }
 
@@ -100,9 +134,9 @@ extension AVLTree: CustomStringConvertible {
     }
 }
 
-private extension BinaryNode {
+private extension AVLNode {
 
-    var min: BinaryNode {
+    var min: AVLNode {
         return left?.min ?? self
     }
 }

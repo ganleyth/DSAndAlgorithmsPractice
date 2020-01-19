@@ -8,5 +8,5 @@
 
 import Foundation
 
-BSTChallenges.challenge3()
+AVLChallenges.playground()
 

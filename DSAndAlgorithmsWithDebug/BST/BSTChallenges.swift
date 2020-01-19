@@ -53,7 +53,7 @@ class BSTChallenges {
     }
 
     static func challenge3() {
-        print((tree1.hasSameElements(as: tree2)) ? "Same" : "Not the same")
+        print((tree1.contains(tree2)) ? "Same" : "Not the same")
     }
 }
 
