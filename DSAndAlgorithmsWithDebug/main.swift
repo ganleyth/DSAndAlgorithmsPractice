@@ -8,5 +8,5 @@
 
 import Foundation
 
-AVLChallenges.playground()
+TrieChallenges.playground()
 

@@ -11,6 +11,9 @@
 		182184A323BD0144008FD4A2 /* MonopolyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182184A223BD0144008FD4A2 /* MonopolyManager.swift */; };
 		182F0DB923BBA600002A86A2 /* RingBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182F0DB823BBA600002A86A2 /* RingBuffer.swift */; };
 		183EEE2323BA53CA0031A90E /* BidirectionalLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183EEE2223BA53CA0031A90E /* BidirectionalLinkedList.swift */; };
+		186088D123D6142300CCAE72 /* TrieNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186088D023D6142300CCAE72 /* TrieNode.swift */; };
+		186088D323D614F400CCAE72 /* Trie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186088D223D614F400CCAE72 /* Trie.swift */; };
+		186088D523D6194C00CCAE72 /* TrieChallenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186088D423D6194C00CCAE72 /* TrieChallenges.swift */; };
 		1867942F23CA30B300FB0ADB /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867942E23CA30B300FB0ADB /* BinarySearchTree.swift */; };
 		186AB6CD23BBB4C2006D5C9E /* TKGRingBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186AB6CC23BBB4C2006D5C9E /* TKGRingBuffer.swift */; };
 		187D75EF23C241FB008ABC8E /* BinaryNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D75EE23C241FB008ABC8E /* BinaryNode.swift */; };
@@ -46,6 +49,9 @@
 		182184A223BD0144008FD4A2 /* MonopolyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonopolyManager.swift; sourceTree = "<group>"; };
 		182F0DB823BBA600002A86A2 /* RingBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RingBuffer.swift; sourceTree = "<group>"; };
 		183EEE2223BA53CA0031A90E /* BidirectionalLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BidirectionalLinkedList.swift; sourceTree = "<group>"; };
+		186088D023D6142300CCAE72 /* TrieNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrieNode.swift; sourceTree = "<group>"; };
+		186088D223D614F400CCAE72 /* Trie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trie.swift; sourceTree = "<group>"; };
+		186088D423D6194C00CCAE72 /* TrieChallenges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrieChallenges.swift; sourceTree = "<group>"; };
 		1867942E23CA30B300FB0ADB /* BinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
 		186AB6CC23BBB4C2006D5C9E /* TKGRingBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TKGRingBuffer.swift; sourceTree = "<group>"; };
 		187D75EE23C241FB008ABC8E /* BinaryNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryNode.swift; sourceTree = "<group>"; };
@@ -76,6 +82,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		186088CF23D6140400CCAE72 /* Trie */ = {
+			isa = PBXGroup;
+			children = (
+				186088D023D6142300CCAE72 /* TrieNode.swift */,
+				186088D223D614F400CCAE72 /* Trie.swift */,
+				186088D423D6194C00CCAE72 /* TrieChallenges.swift */,
+			);
+			path = Trie;
+			sourceTree = "<group>";
+		};
 		1867942D23CA307B00FB0ADB /* BST */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +129,7 @@
 		18F0F06123B7C6DB00789FF1 /* DSAndAlgorithmsWithDebug */ = {
 			isa = PBXGroup;
 			children = (
+				186088CF23D6140400CCAE72 /* Trie */,
 				EB88142523D0C5D900F043C1 /* AVL */,
 				1867942D23CA307B00FB0ADB /* BST */,
 				187D75ED23C241EB008ABC8E /* BinaryTree */,
@@ -243,6 +260,9 @@
 				187D75F123C242ED008ABC8E /* BinaryTreeChallenges.swift in Sources */,
 				18F0F06323B7C6DB00789FF1 /* main.swift in Sources */,
 				EB88142723D0C5EA00F043C1 /* AVLTree.swift in Sources */,
+				186088D123D6142300CCAE72 /* TrieNode.swift in Sources */,
+				186088D523D6194C00CCAE72 /* TrieChallenges.swift in Sources */,
+				186088D323D614F400CCAE72 /* Trie.swift in Sources */,
 				183EEE2323BA53CA0031A90E /* BidirectionalLinkedList.swift in Sources */,
 				EB88142923D0C5F400F043C1 /* AVLChallenges.swift in Sources */,
 				18F0F07723B9B97500789FF1 /* QueueChallenges.swift in Sources */,
