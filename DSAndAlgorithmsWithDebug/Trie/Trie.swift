@@ -1,6 +1,16 @@
-class Trie<CollectionType: Collection> where CollectionType.Element: Hashable {
+class Trie<CollectionType: Collection & Hashable> where CollectionType.Element: Hashable {
     typealias Node = TrieNode<CollectionType.Element>
-    private let root = Node(key: nil, parent: nil)
+    let root = Node(key: nil, parent: nil)
+    private(set) var collections: Set<CollectionType> = []
+    
+    var count: Int {
+        return collections.count
+    }
+    
+    var isEmpty: Bool {
+        return count == 0
+    }
+    
     init() {}
     
     func insert(_ collection: CollectionType) {
@@ -13,7 +23,12 @@ class Trie<CollectionType: Collection> where CollectionType.Element: Hashable {
             current = current.children[element]!
         }
         
-        current.isTerminating = true
+        if current.isTerminating {
+            return
+        } else {
+            current.isTerminating = true
+            collections.insert(collection)
+        }
     }
     
     func contains(_ collection: CollectionType) -> Bool {
@@ -41,6 +56,7 @@ class Trie<CollectionType: Collection> where CollectionType.Element: Hashable {
         guard current.isTerminating else { return }
 
         current.isTerminating = false
+        collections.remove(collection)
         while let parent = current.parent, current.children.isEmpty && !current.isTerminating {
             parent.children[current.key!] = nil
             current = parent
@@ -73,5 +89,36 @@ extension Trie where CollectionType: RangeReplaceableCollection {
         }
 
         return results
+    }
+}
+
+// My challenge 1 solution
+extension Trie where CollectionType: RangeReplaceableCollection {
+    
+//    var allCollections: [CollectionType] {
+//        // Starting with the root node, for every child, see if it's a terminating node and if so, add to the collections array
+//        return fetchAllCollections(from: root, currentPrefix: "")
+//    }
+    
+    func fetchAllCollections(from: Node?, currentPrefix: CollectionType) -> [CollectionType] {
+        guard let from = from else { return [] }
+        
+        var result = [CollectionType]()
+        
+        var newPrefix = currentPrefix
+        if let key = from.key {
+            newPrefix.append(key)
+        }
+        
+        if from.isTerminating {
+            result.append(newPrefix)
+        }
+        
+        // Recursively check the children of the from node to get their collections
+        for child in from.children.values {
+            result += fetchAllCollections(from: child, currentPrefix: newPrefix)
+        }
+        
+        return result
     }
 }
