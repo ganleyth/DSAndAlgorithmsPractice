@@ -8,5 +8,5 @@
 
 import Foundation
 
-TrieChallenges.playground()
+BinarySearchChallenges.challenge2()
 
