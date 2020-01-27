@@ -20,6 +20,7 @@
 		187D75F123C242ED008ABC8E /* BinaryTreeChallenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D75F023C242ED008ABC8E /* BinaryTreeChallenges.swift */; };
 		1882A6EE23DCABF700B11D15 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1882A6ED23DCABF700B11D15 /* BinarySearch.swift */; };
 		1882A6F023DCAFFD00B11D15 /* BinarySearchChallenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1882A6EF23DCAFFD00B11D15 /* BinarySearchChallenges.swift */; };
+		18DDD5E823DD5B0E00A20FF5 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DDD5E723DD5B0E00A20FF5 /* Heap.swift */; };
 		18F0F06323B7C6DB00789FF1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F0F06223B7C6DB00789FF1 /* main.swift */; };
 		18F0F06B23B7C76E00789FF1 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F0F06A23B7C76E00789FF1 /* LinkedList.swift */; };
 		18F0F06D23B7C7E100789FF1 /* LinkedListChallenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F0F06C23B7C7E100789FF1 /* LinkedListChallenges.swift */; };
@@ -60,6 +61,7 @@
 		187D75F023C242ED008ABC8E /* BinaryTreeChallenges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTreeChallenges.swift; sourceTree = "<group>"; };
 		1882A6ED23DCABF700B11D15 /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
 		1882A6EF23DCAFFD00B11D15 /* BinarySearchChallenges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchChallenges.swift; sourceTree = "<group>"; };
+		18DDD5E723DD5B0E00A20FF5 /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
 		18F0F05F23B7C6DB00789FF1 /* DSAndAlgorithmsWithDebug */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DSAndAlgorithmsWithDebug; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F0F06223B7C6DB00789FF1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		18F0F06A23B7C76E00789FF1 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
@@ -123,6 +125,14 @@
 			path = BinarySearch;
 			sourceTree = "<group>";
 		};
+		18DDD5E623DD5AFF00A20FF5 /* Heap */ = {
+			isa = PBXGroup;
+			children = (
+				18DDD5E723DD5B0E00A20FF5 /* Heap.swift */,
+			);
+			path = Heap;
+			sourceTree = "<group>";
+		};
 		18F0F05623B7C6DB00789FF1 = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +152,7 @@
 		18F0F06123B7C6DB00789FF1 /* DSAndAlgorithmsWithDebug */ = {
 			isa = PBXGroup;
 			children = (
+				18DDD5E623DD5AFF00A20FF5 /* Heap */,
 				1882A6EC23DCABE100B11D15 /* BinarySearch */,
 				186088CF23D6140400CCAE72 /* Trie */,
 				EB88142523D0C5D900F043C1 /* AVL */,
@@ -265,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				186AB6CD23BBB4C2006D5C9E /* TKGRingBuffer.swift in Sources */,
+				18DDD5E823DD5B0E00A20FF5 /* Heap.swift in Sources */,
 				18F0F07023B909FF00789FF1 /* Stack.swift in Sources */,
 				18F0F07523B9B96D00789FF1 /* Queue.swift in Sources */,
 				EB50B9A323C0EAAA00D95A02 /* TreeNode.swift in Sources */,
