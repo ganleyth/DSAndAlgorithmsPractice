@@ -28,6 +28,8 @@
 		18F0F07223B90A0700789FF1 /* StackChallenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F0F07123B90A0700789FF1 /* StackChallenges.swift */; };
 		18F0F07523B9B96D00789FF1 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F0F07423B9B96D00789FF1 /* Queue.swift */; };
 		18F0F07723B9B97500789FF1 /* QueueChallenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F0F07623B9B97500789FF1 /* QueueChallenges.swift */; };
+		EB3FAA8823E1F7CB006C8E44 /* On2Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3FAA8723E1F7CB006C8E44 /* On2Sorting.swift */; };
+		EB3FAA8A23E1FBD8006C8E44 /* On2SortingChallenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3FAA8923E1FBD8006C8E44 /* On2SortingChallenges.swift */; };
 		EB50B9A223C0EAAA00D95A02 /* TreeChallenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB50B9A023C0EAAA00D95A02 /* TreeChallenges.swift */; };
 		EB50B9A323C0EAAA00D95A02 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB50B9A123C0EAAA00D95A02 /* TreeNode.swift */; };
 		EB88142723D0C5EA00F043C1 /* AVLTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB88142623D0C5EA00F043C1 /* AVLTree.swift */; };
@@ -70,6 +72,8 @@
 		18F0F07123B90A0700789FF1 /* StackChallenges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackChallenges.swift; sourceTree = "<group>"; };
 		18F0F07423B9B96D00789FF1 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		18F0F07623B9B97500789FF1 /* QueueChallenges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueChallenges.swift; sourceTree = "<group>"; };
+		EB3FAA8723E1F7CB006C8E44 /* On2Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = On2Sorting.swift; sourceTree = "<group>"; };
+		EB3FAA8923E1FBD8006C8E44 /* On2SortingChallenges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = On2SortingChallenges.swift; sourceTree = "<group>"; };
 		EB50B9A023C0EAAA00D95A02 /* TreeChallenges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeChallenges.swift; sourceTree = "<group>"; };
 		EB50B9A123C0EAAA00D95A02 /* TreeNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
 		EB88142623D0C5EA00F043C1 /* AVLTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVLTree.swift; sourceTree = "<group>"; };
@@ -152,6 +156,7 @@
 		18F0F06123B7C6DB00789FF1 /* DSAndAlgorithmsWithDebug */ = {
 			isa = PBXGroup;
 			children = (
+				EB3FAA8623E1F7A5006C8E44 /* On2Sorting */,
 				18DDD5E623DD5AFF00A20FF5 /* Heap */,
 				1882A6EC23DCABE100B11D15 /* BinarySearch */,
 				186088CF23D6140400CCAE72 /* Trie */,
@@ -196,6 +201,15 @@
 				182184A223BD0144008FD4A2 /* MonopolyManager.swift */,
 			);
 			path = Queue;
+			sourceTree = "<group>";
+		};
+		EB3FAA8623E1F7A5006C8E44 /* On2Sorting */ = {
+			isa = PBXGroup;
+			children = (
+				EB3FAA8723E1F7CB006C8E44 /* On2Sorting.swift */,
+				EB3FAA8923E1FBD8006C8E44 /* On2SortingChallenges.swift */,
+			);
+			path = On2Sorting;
 			sourceTree = "<group>";
 		};
 		EB50B99F23C0EAAA00D95A02 /* Tree */ = {
@@ -291,9 +305,11 @@
 				186088D123D6142300CCAE72 /* TrieNode.swift in Sources */,
 				186088D523D6194C00CCAE72 /* TrieChallenges.swift in Sources */,
 				186088D323D614F400CCAE72 /* Trie.swift in Sources */,
+				EB3FAA8A23E1FBD8006C8E44 /* On2SortingChallenges.swift in Sources */,
 				183EEE2323BA53CA0031A90E /* BidirectionalLinkedList.swift in Sources */,
 				EB88142923D0C5F400F043C1 /* AVLChallenges.swift in Sources */,
 				18F0F07723B9B97500789FF1 /* QueueChallenges.swift in Sources */,
+				EB3FAA8823E1F7CB006C8E44 /* On2Sorting.swift in Sources */,
 				182184A323BD0144008FD4A2 /* MonopolyManager.swift in Sources */,
 				1867942F23CA30B300FB0ADB /* BinarySearchTree.swift in Sources */,
 				EB50B9A223C0EAAA00D95A02 /* TreeChallenges.swift in Sources */,
@@ -424,7 +440,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QFVJ6KY7E2;
+				DEVELOPMENT_TEAM = 7W33J4T989;
 				ENABLE_HARDENED_RUNTIME = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -436,7 +452,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QFVJ6KY7E2;
+				DEVELOPMENT_TEAM = 7W33J4T989;
 				ENABLE_HARDENED_RUNTIME = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -8,5 +8,5 @@
 
 import Foundation
 
-BinarySearchChallenges.challenge2()
+On2SortingChallenges.playground()
 
