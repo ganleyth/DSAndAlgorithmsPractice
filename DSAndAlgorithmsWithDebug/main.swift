@@ -8,5 +8,5 @@
 
 import Foundation
 
-On2SortingChallenges.playground()
+On2SortingChallenges.challenge1()
 
