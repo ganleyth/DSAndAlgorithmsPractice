@@ -61,6 +61,24 @@ func selectionSort<Element>(_ array: inout [Element]) where Element: Comparable 
     }
 }
 
+func selectionSort2<T>(_ collection: inout T) where T: BidirectionalCollection & MutableCollection, T.Element: Comparable {
+    guard collection.count >= 2 else { return }
+
+    for current in collection.indices {
+        var lowest = current
+        var other = collection.index(after: current)
+        while other < collection.endIndex {
+            if collection[lowest] > collection[other] {
+                lowest = other
+            }
+            other = collection.index(after: other)
+        }
+        if lowest != current {
+            collection.swapAt(lowest, current)
+        }
+    }
+}
+
 func insertionSort<Element>(_ array: inout [Element]) where Element: Comparable {
     guard array.count >= 2 else { return }
     
@@ -72,5 +90,22 @@ func insertionSort<Element>(_ array: inout [Element]) where Element: Comparable 
                 break
             }
         }
+    }
+}
+
+func insertionSort2<T>(_ collection: inout T) where T: MutableCollection & BidirectionalCollection, T.Element: Comparable {
+
+    guard collection.count >= 2 else { return }
+
+    var current = collection.index(after: collection.startIndex)
+    while current < collection.endIndex {
+        var other = collection.index(before: current)
+        while other > collection.startIndex, collection[other] > collection[current] {
+            other = collection.index(before: other)
+        }
+
+        collection.swapAt(current, collection.index(after: other))
+
+        current = collection.index(after: current)
     }
 }
